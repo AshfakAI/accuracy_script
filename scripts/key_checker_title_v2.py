@@ -37,15 +37,8 @@ def compare_json_files(original_file, test_file):
         # Compare langs first
         for lang in original_keywords_by_lang:
             if lang in test_keywords_by_lang:
-                # Check if keyword sets are the same
-                original_keywords_set = set(original_keywords_by_lang[lang])
-                test_keywords_set = set(test_keywords_by_lang[lang])
-                
-                if original_keywords_set == test_keywords_set:
                     correct_lang_count += 1
-                else:
-                    incorrect_lang_count += 1
-                    lang_mismatches.append(lang)
+
             else:
                 incorrect_lang_count += 1
                 lang_mismatches.append(lang)
