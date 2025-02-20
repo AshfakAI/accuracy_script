@@ -54,8 +54,8 @@ for file_name in common_files:
         # Check for "grant_text" key and compare values
         original_grant_text = original_data.get("grant_text", None)
         test_grant_text = test_data.get("grant_text", None)
-        print(set(original_grant_text))
-        print(set(test_grant_text))
+        # print(set(original_grant_text))
+        # print(set(test_grant_text))
         
         #if original_grant_text == test_grant_text:
         #similarity_score = ratio(str(original_grant_text),str(test_grant_text))
