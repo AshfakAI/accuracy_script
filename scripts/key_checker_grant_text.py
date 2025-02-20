@@ -58,9 +58,9 @@ for file_name in common_files:
         # print(set(test_grant_text))
         
         #if original_grant_text == test_grant_text:
-        #similarity_score = ratio(str(original_grant_text),str(test_grant_text))
-        #print(similarity_score)
-        if set(original_grant_text)==set(test_grant_text):
+        similarity_score = ratio(str(original_grant_text),str(test_grant_text))
+        print(similarity_score)
+        #if set(original_grant_text)==set(test_grant_text):
             matching_files_grant_text += 1
         else:
             comparison_results_grant_text.append({
